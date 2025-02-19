@@ -3,15 +3,15 @@ const res = require('express/lib/response');
 
 const app = express();
 
-const PORT = 3001;
+const PORT = 5000;
 
 app.get('/', (req, res) => {
     // console.log(req);
-    res.status(502).send('pgalA JKJK..');
+    res.status(200).send('pgalA JKJK..');
 })
 app.get('/name',(req, res)=>{
     console.log(req.query,req.params);
-    res.status(502).send('pgalA JKJKjk..');
+    res.status(200).send('pgalA JKJKjk..');
 })
 
 app.listen(PORT, () => {
